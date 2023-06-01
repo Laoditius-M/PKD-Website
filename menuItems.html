@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Items</title>
+    <link rel="stylesheet" href="menuItemsPageCSS.css">
+    <link rel="stylesheet" href="padiStyle2.css">
+    <link rel="stylesheet" href="padiStyle.css">
+    <link rel="stylesheet" href="gallery.css">
+    <script src="homeScript.js"></script>
+</head>
+
+<body>
+    <header class="navBar" id="navBar2">
+        <div class="logo">
+            <a href="home.html#home"><img class="logoImg" src="images/logo.png" /></a>
+        </div>
+        <nav>
+            <ul class="navMenu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="menus.html">Menus</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li class="singInBtn"><a href="startupPage.html">Sign In</a></li>
+                <li><a href=""><img src="images/cart1.png" class="navCart"></a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".navMenu");
+
+        hamburger.addEventListener("click", mobliemmenu);
+
+        function mobliemmenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+    <section class="menuItems">
+        <div id="pageHeading">
+            <h1>MENU ITEMS</h1>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="itemsList">
+                    <div class="itemsHeading">
+                        <h3>Our Menu's</h3>
+                    </div>
+                    <div class="menuNames"  >
+                        <a>Menu Name</a>
+                        <a>Menu Name</a>
+                        <a>Menu Name</a>
+                        <a>Menu Name</a>
+                        <a>Menu Name</a>
+                    </div>
+                </div>
+                <div class="itemsBox">
+                    <div class="itemsHeading">
+                        <h3>Menu Name</h3>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <img class="image" src="images/starters.jpeg">
+                            <h4>Item Placeholder</h4>
+                            <a class="orderBtn-3">Order</a>
+                        </div>
+                        <div>
+                            <img class="image" src="images/main.jfif">
+                            <h4>Item Placeholder</h4>
+                            <a class="orderBtn-3">Order</a>
+                        </div>
+                        <div>
+                            <img class="image" src="images/dessert.jfif">
+                            <h4>Item Placeholder</h4>
+                            <a class="orderBtn-3">Order</a>
+                        </div>
+                        <div>
+                            <img class="image" src="images/starters.jpeg">
+                            <h4>Item Placeholder</h4>
+                            <a class="orderBtn-3">Order</a>
+                        </div>
+                        <div>
+                            <img class="image" src="images/main.jfif">
+                            <h4>Item Placeholder</h4>
+                            <a class="orderBtn-3">Order</a>
+                        </div>
+                        <div>
+                            <img class="image" src="images/dessert.jfif">
+                            <h4>Item Placeholder</h4>
+                            <a class="orderBtn-3">Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="content">
+                <div class="footerHeading">
+                    <h1>PADI'S<br> KITCHEN DELIGHT</h1>
+                </div>
+                <div class="info">
+                    <div class="partOne contactDetails">
+                        <p>Best Catering Service</p>
+                        <p>Paid's@gmail.com</p>
+                        <p>Mpumalanga<br>Middleburg</p>
+                        <p>+27 823456745</p>
+                    </div>
+                    <div class="partTwo openTimes">
+                        <p>weekdays 8:00 - 20:00</p>
+                        <p>weekdays 8:00 - 20:00</p>
+                        <p>weekdays 8:00 - 20:00</p>
+                    </div>
+                    <div class="partThree quickLinks">
+                        <p><a href="home.html">home</a></p>
+                        <p><a href="Menus.html">Menus</a></p>
+                        <p><a href="gallery.html">Gallery</a></p>
+                        <p><a href="contactUs.html">Contact</a></p>
+                    </div>
+                    <div class="partFour newsLetter">
+                        <p id="newsletterHeading">newsletter</p>
+                        <p>Sign up for our newsletter</p>
+                        <input type="text" placeholder="Email" class="newsLetterInput">
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>copyright &copy;Kasi Software Developers</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

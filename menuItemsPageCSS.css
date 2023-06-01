@@ -1,0 +1,287 @@
+
+/*---------------- Menu Items Page -------------*/
+.menuItems {
+  height: 100%;
+}
+
+.menuItems .container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.menuItems .container .content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.menuItems .container .content .itemsHeading {
+  text-align: left;
+}
+
+.menuItems .container .content .itemsHeading h3 {
+  font-size: 27px;
+  margin-bottom: 30px;
+}
+.menuItems .container .content .itemsList {
+  width: 100%;
+  height: 66%;
+  border-right: 1px solid var(--mainGray3);
+}
+
+.menuItems .container .content .itemsList .menuNames {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItems .container .content .itemsList .menuNames a {
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #000;
+
+}
+.menuItems .container .content .itemsList .menuNames a:hover {
+  color: orange;
+
+}
+
+.menuItems .container .content .itemsBox {
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.menuItems .container .content .itemsBox .itemsHeading {
+  padding-left: 42px;
+}
+
+.menuItems .container .content .itemsBox .items:last-child div:last-child {
+  margin-bottom: 0;
+}
+
+.menuItems .container .content .itemsBox .items {
+  text-align: center;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menuItems .container .content .itemsBox .items h4 {
+  padding: 5px 0 15px 0;
+}
+
+.orderBtn-3 {
+  border: none;
+  outline: none;
+  padding: 5px 50px;
+  height: 30px;
+  width: 9em;
+  font-size: 15px;
+  z-index: 1;
+  color: var(--mainWhite);
+  position: relative;
+  transition: 0.4s ease-out;
+  background: var(--mainOrange);
+  cursor: pointer;
+}
+
+.menuItems .container .content img {
+  width: 80%;
+  height: 70%;
+  object-fit: cover;
+  padding: 0;
+  margin-bottom: -110px;
+}
+/*---------------- Menu Items Page -------------*/
+
+@media only screen and (max-width: 1440px){
+ /*---------------- Menu Items Page -------------*/
+  .menuItems .container .content .itemsBox .items h4 {
+    font-size: 23px;
+    margin-top: 110px;
+  }
+
+  .orderBtn-3 {
+    border: none;
+    outline: none;
+    padding: 4px 65px;
+    font-size: 19px;
+  }
+  /*---------------- Menu Items Page -------------*/
+  }
+  
+@media only screen and (max-width: 1024px){
+/*---------------- Menu Items Page -------------*/
+  .orderBtn-3 {
+    border: none;
+    outline: none;
+    padding: 4px 45px;
+    font-size: 15px;
+  }
+
+  .menuItems .container .content .itemsBox .items div {
+    margin-bottom: -100px;
+  }
+
+  .menuItems .container .content .itemsBox .items h4 {
+    font-size: 18px;
+  }
+  /*---------------- Menu Items Page -------------*/
+  }
+  
+ @media only screen and (max-width: 768px){
+  /*----------- Menu Items Page --------*/
+  .menuItems .container .content .itemsHeading h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .menuItems .container .content .itemsBox .items h4 {
+    padding: 2px 0 10px 0;
+    font-size: 13px;
+  }
+  .menuItems .container .content .itemsBox .items div {
+    padding-bottom: 20px;
+  }
+
+  .menuItems .container .content .itemsBox .items:last-child div:last-child {
+    margin-bottom: 0;
+  }
+
+  .menuItems a {
+    font-size: 14px;
+  }
+
+  /*------------ Menu Items Page -------*/
+  }
+  
+  @media only screen and (max-width: 425px){
+    /*----------- Menu Items Page --------*/
+  .menuItems .container {
+    margin: 20px 10px;
+  }
+
+  .menuItems .container .content .itemsBox .itemsHeading {
+    padding-left: 7px;
+  }
+
+  .menuItems .container .content .itemsHeading h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .menuItems .container .content .itemsBox .items h4 {
+    padding: 2px 0 5px 0;
+    font-size: 12px;
+  }
+
+  .menuItems .container .content .itemsBox .items div {
+    padding-bottom: 30px;
+  }
+
+  .menuItems .container .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .menuItems .container .content .itemsList {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .menuItems .container .content .itemsBox {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    padding-left: 10px;
+  }
+  .menuItems .container .content .itemsBox .items:last-child div:last-child {
+    margin-bottom: 0;
+  }
+
+  .menuItems a {
+    font-size: 12px;
+  }
+
+  .menuItems .container .content img {
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    padding: 0;
+  }
+
+  .orderBtn-3 {
+    border: none;
+    outline: none;
+    padding: 3px 30px;
+    font-size: 13px;
+  }
+
+  /*------------ Menu Items Page -------*/
+   }
+   
+   
+@media only screen and (max-width: 375px){
+/*------------ Menu Items Page -------*/
+  .menuItems .container .content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .menuItems .container .content .itemsList {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .menuItems .container .content .itemsBox {
+    grid-column-start: 3;
+    grid-column-end: 8;
+    padding-left: 10px;
+  }
+
+  .orderBtn-3 {
+    border: none;
+    outline: none;
+    padding: 3px 30px;
+    font-size: 13px;
+  }
+  /*------------ Menu Items Page -------*/
+}
+
+   
+@media only screen and (max-width: 320px){
+ /*------------ Menu Items Page -------*/
+  .menuItems .container .content .itemsBox .itemsHeading {
+    padding-left: 7px;
+  }
+
+  .menuItems .container .content .itemsHeading h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .menuItems .container .content .itemsList .menuNames {
+    margin-left: 5px;
+  }
+
+  .menuItems a {
+    font-size: 10px;
+  }
+
+  .menuItems .container .content .itemsBox .items h4 {
+    padding: 2px 0 5px 0;
+    font-size: 11px;
+  }
+
+  .orderBtn-3 {
+    border: none;
+    outline: none;
+    padding: 2px 20px;
+    font-size: 12px;
+  }
+  /*------------ Menu Items Page -------*/
+}
+   
+  
+  
+  
+

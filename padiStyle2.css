@@ -1,0 +1,4462 @@
+:root {
+  --mainOrange: orange;
+  --mainBlack: black;
+  --mainWhite: #fff;
+  --mainGray: rgb(32, 32, 32);
+  --mainGray2: rgb(255, 255, 255);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.logoImg {
+  width: 160px;
+  padding-top: 10px;
+}
+
+.logoImg a {
+  padding: 0;
+}
+
+.left,
+.right {
+  width: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+h4 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+p {
+  font-weight: 100;
+}
+
+#pageHeading h1 {
+  color: var(--mainWhite);
+  font-family: "Benne-Regular";
+}
+
+#pageHeading {
+  background: url("images/headingImg1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 11em;
+  margin-top: 4em;
+  text-align: center;
+}
+
+#pageHeading h1 {
+  font-size: 50px;
+  padding-top: 1.3em;
+  margin-bottom: 30px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 33px;
+  margin: 2px 0 30px 0;
+  font-family: "Benne-Regular";
+}
+
+.heading h4 {
+  color: var(--mainOrange);
+  font-size: 10.6px;
+  margin: 60px 0 2px 0;
+}
+
+.container {
+  position: relative;
+  margin-bottom: 40px;
+  margin: 50px 20px;
+}
+
+/*----------------- Hamburger ----------------*/
+.hamburger {
+  display: none;
+}
+
+.navMenu {
+  display: none;
+}
+
+.hamburger.active {
+  display: initial;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.5s ease-in-out;
+  background: var(--mainWhite);
+}
+/*----------------- Hamburger ----------------*/
+
+/*--------------- Navigation Menu ------------*/
+header {
+  height: 3.6em;
+  transition: all 0.5s ease-in-out;
+}
+
+#navBar2 {
+  background-color: var(--mainBlack);
+}
+
+.navBar {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1% 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.navMenu {
+  display: flex;
+}
+
+.navMenu {
+  list-style: none;
+}
+
+.navMenu li {
+  padding: 10px;
+}
+
+.navMenu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+header.sticky {
+  background-color: var(--mainBlack);
+  transition: 0.4s ease-in-out;
+  height: 3.9em;
+  box-shadow: 0 2px 9px rgb(46, 46, 46);
+  padding: 1% 4%;
+}
+
+header.sticky .navMenu .singInBtn a {
+  border: 2px solid var(--mainWhite);
+}
+
+header.sticky .navMenu .singInBtn a:hover {
+  background-color: var(--mainBlack);
+}
+
+.navMenu.active {
+  display: initial;
+}
+
+.singInBtn a {
+  border: 2px solid var(--mainWhite);
+  padding: 5px 9px;
+  transition: 0.4s all ease-in-out 0s;
+}
+
+.navCart {
+  width: 30px;
+  height: 30px;
+  padding-left: 30px;
+}
+
+/*--------------- Navigation Menu ------------*/
+
+/*----------------- Startup Page ------------ */
+.loginType-img {
+  width: 7em;
+  margin: 2em auto;
+}
+
+.type-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  box-sizing: border-box;
+  gap: 10%;
+}
+
+.startUp-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.login-Type {
+  margin: 40px auto;
+  background-color: var(--mainOrange);
+  width: 12em;
+  height: 15em;
+  border-radius: 20px;
+}
+
+.startUp-container h3 {
+  font-size: 20px;
+}
+
+.startUp-container h1 {
+  font-size: 1.7em;
+  margin: 20px auto;
+}
+/*------------------ Startup Page --------------- */
+
+/*----------- Login Page + Registration --------- */
+.login-Form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90vh;
+  text-align: center;
+  align-content: center;
+}
+
+.login-Heading {
+  margin-bottom: 2em;
+}
+
+.login-Heading h2 {
+  font-size: 1.5em;
+}
+
+.login-Heading h4 {
+  font-family: arial;
+  color: rgb(59, 59, 59);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.logo-img {
+  width: 7em;
+  margin: 20px;
+}
+
+.login-Form .details .input-section {
+  margin-bottom: 15px;
+  opacity: 1;
+}
+
+.login-Form .details .input-section input[type="text"] {
+  width: 17em;
+  padding: 9px;
+  padding-left: 12px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  border-radius: 17px;
+  outline: none;
+  font-size: 12px;
+  color: var(--mainBlack);
+}
+
+.form-container {
+  padding: 10px;
+}
+
+.btn {
+  width: 15.5em;
+  height: 2.3em;
+  margin: 10px;
+  background-color: var(--mainOrange);
+  color: var(--mainWhite);
+  border: none;
+  border-radius: 17px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: rgb(255, 174, 0);
+}
+
+.login-Form p {
+  margin: 1.5em auto;
+  color: rgb(180, 180, 180);
+  font-size: 12px;
+}
+
+.login-Form a {
+  text-decoration: none;
+  color: var(--mainOrange);
+}
+/*----------- Login Page + Registration --------- */
+
+/*------------------- Home Main ------------------*/
+.homeMainSect {
+  position: relative;
+}
+
+.homeMainSect {
+  height: 70vh;
+  background-image: url("images/homeMain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -1100px;
+  object-fit: cover;
+}
+
+.homeMainSect .homeDetails {
+  position: relative;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+}
+
+.homeMainSect p {
+  color: var(--mainWhite);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.homeMainSect .homeDetails h1 {
+  color: #fff;
+  font-size: 5em;
+  margin-bottom: 10px;
+}
+
+.homeMainSect .homeDetails h4 {
+  color: #fff;
+  margin-bottom: 1.7em;
+  font-weight: 100;
+}
+
+.homeMainDesc {
+  color: var(--mainWhite);
+  font-weight: 100;
+  line-height: 20px;
+  padding-bottom: 20px;
+  width: 50%;
+  position: relative;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.homeMainDesc p {
+  font-size: 10px;
+}
+
+.Orderbtn {
+  border: 2px solid var(--mainWhite);
+  outline: none;
+  height: 30px;
+  width: 130px;
+  font-size: 15px;
+  z-index: 1;
+  color: var(--mainWhite);
+  position: relative;
+  transition: 0.4s ease-out;
+  background: none;
+  overflow: hidden;
+}
+
+.orderBtn-2 {
+  border: 1px solid var(--mainOrange);
+  outline: none;
+  height: 30px;
+  width: 130px;
+  font-size: 15px;
+  z-index: 1;
+  color: var(--mainWhite);
+  position: relative;
+  transition: 0.4s ease-out;
+  background: none;
+  overflow: hidden;
+  margin-top: 9px;
+  margin-bottom: 80px;
+}
+
+.Orderbtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+  height: 0%;
+  background-color: var(--mainWhite);
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.orderBtn-2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  width: 100%;
+  height: 180%;
+  background-color: var(--mainOrange);
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.Orderbtn:hover {
+  color: var(--mainBlack);
+}
+
+.orderBtn-2:hover {
+  color: var(--mainOrange);
+}
+
+.orderBtn-2:hover::before {
+  height: 0%;
+}
+
+.Orderbtn:hover::before {
+  height: 180%;
+}
+/*------------------- Home Main ------------------*/
+
+/*------------------- Home Intro -----------------*/
+.homeIntro .container {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.homeIntro .container .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.homeIntro .container .content .left {
+  text-align: right;
+}
+
+.homeIntro .container .content .left img {
+  width: 100%;
+  height: 26em;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.homeIntro .container .content .right .heading {
+  text-align: left;
+  padding-top: 9px;
+  width: 80%;
+}
+
+.homeIntro .container .content .right .heading h1 {
+  color: var(--mainBlack);
+}
+
+.homeIntro .container .content .left {
+  padding-right: 10px;
+  height: 100%;
+}
+
+.homeIntro .container .content .right {
+  padding-right: 30px;
+}
+
+/*------------------- Home Intro -----------------*/
+
+/*--------------- Home: Our Services -------------*/
+.ourServices .container .content img {
+  width: 80%;
+  height: 70%;
+  object-fit: cover;
+  padding: 0;
+}
+
+.ourServices .container .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.ourServices {
+  height: 100%;
+}
+/*--------------- Home: Our Services -------------*/
+
+/*--------------- Home: Special Occasions --------*/
+.specialOccasion {
+  height: 100%;
+}
+
+.specialOccasion .container .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  text-align: center;
+}
+
+.specialOccasion .container .packageOption {
+  margin: 0 20px;
+}
+.specialOccasion .container .packageOption .pkgOptionImg {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+}
+
+.specialOccasion .container .packageOption .pkgOptionHeading h4 {
+  margin-top: 5px;
+}
+
+.specialOccasion .container .packageOption .pkgOptionImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*--------------- Home: Special Occasions --------*/
+/*----------------- Home: figures ----------------*/
+.figures .content {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.figures {
+  background-image: linear-gradient(rgba(8, 8, 8, 0.733), rgba(0, 0, 0, 0.808)),
+    url("images/pexels-vidal-balielo-jr-4007053.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  height: 15em;
+}
+
+.figures .content div {
+  display: flex;
+  align-items: center;
+}
+
+.figures .content span {
+  color: var(--mainWhite);
+}
+
+.figures .content .plus {
+  display: flex;
+  flex-direction: row;
+}
+.figures .content div p {
+  color: var(--mainWhite);
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.figures .content div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.figures img {
+  width: 110px;
+}
+/*----------------- Home: figures ----------------*/
+
+/*-------------------  About Us ------------------*/
+#aboutUs {
+  background-color: transparent;
+}
+
+#aboutUs .container .heading {
+  margin: 5em 0 1em 0;
+}
+
+#aboutUs .container .content .right h2 {
+  font-weight: 100;
+  padding: 10px 0;
+  font-size: 28px;
+  font-family: "Benne";
+}
+
+#aboutUs .container .content {
+  padding: 0;
+}
+
+.ourTeam .container .heading h1 {
+  color: var(--mainBlack);
+  font-size: 20px;
+  padding: 40px 0 0 0;
+}
+
+.ourTeam .container .content {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+/*-------------------- About Us -----------------*/
+
+/*-------------------- Menus --------------------*/
+.menus {
+  height: 100%;
+}
+
+.menus .menuList {
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  text-align: center;
+}
+
+.menus .menuList div .image {
+  width: 93%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.menus .menuList div h3 {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--mainWhite);
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.menus .menuList div #menuBtn {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--mainWhite);
+}
+
+.menus .container .heading {
+  margin: 5em 0 1em 0;
+}
+
+/*--------------------- Menus --------------------*/
+.Gallery {
+  height: 100%;
+}
+
+.Gallery .container .heading {
+  margin: 5em 0 1em 0;
+}
+
+.Gallery .container .content {
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.Gallery .container .content .imgContainer {
+  height: 15em;
+  width: 100%;
+}
+
+.Gallery .container .content .imgContainer .image-resize {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*--------------------- Contact Us ---------------*/
+.contactUs {
+  height: 100%;
+}
+
+.contactUs .container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contactUs .container .content .contentBx {
+  display: flex;
+}
+
+.contactUs .container .content .contentBx .contactFormContainer {
+  width: 50%;
+  height: 100%;
+}
+
+.headingC {
+  text-align: center;
+  width: 30%;
+}
+
+.contactUs .container .content .contentBx .contactFormContainer h1 {
+  margin-bottom: 30px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer .input {
+  width: 90%;
+  height: 25px;
+  color: var(--mainBlack);
+  padding: 3px;
+  margin: 2px 0;
+  font-size: 14px;
+  border: 2px solid var(--mainOrange);
+}
+
+.inputContainer label {
+  margin-top: 20px;
+  color: var(--mainOrange);
+  font-size: 16px;
+}
+
+.inputContainer .textarea {
+  height: 150px;
+}
+
+.map {
+  width: 50%;
+}
+
+iframe {
+  height: 22em;
+  width: 100%;
+}
+
+.contactDetailsS {
+  margin-top: 50px;
+  display: flex;
+}
+
+.contactDetailsS div {
+  margin-right: 120px;
+}
+
+.contactDetailsS p {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.contactDetailsS .cdHeadings p {
+  color: var(--mainOrange);
+  font-size: 16px;
+}
+
+/*--------------------- Contact Us ---------------*/
+
+/*--------------------- Page: Cart ----------------*/
+.orderDImg {
+  width: 120px;
+}
+
+td {
+  padding: 20px 30px 20px 30px;
+}
+
+#row1 {
+  border-bottom: 1px solid var(--mainBlack);
+  padding-top: 0;
+}
+
+#row2 {
+  border-bottom: 1px solid var(--mainBlack);
+}
+
+#row3 {
+  padding-top: 1px;
+  padding-bottom: 0px;
+}
+
+.price {
+  padding-left: 600px;
+}
+
+#row3 {
+  border-bottom: 1px solid var(--mainBlack);
+}
+
+.orderDetails .itemRemoveBtn {
+  width: 90px;
+  height: 30px;
+  font-size: 12px;
+  background: var(--mainOrange);
+  border: none;
+  color: var(--mainWhite);
+}
+
+.deliveryBox {
+  position: relative;
+  left: 49em;
+}
+
+.deliveryBox .deliveryHeader {
+  display: flex;
+  align-items: center;
+  background-color: var(--mainOrange);
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  color: var(--mainWhite);
+}
+
+.deliveryBox .deliveryHeader h1 {
+  font-size: 18px;
+}
+
+.deliveryBox img {
+  width: 60px;
+  padding: 9px;
+}
+
+.deliveryBox {
+  width: 27em;
+}
+
+.deliveryDetailsInput {
+  width: 97%;
+  border: 2px solid var(--mainOrange);
+  outline: none;
+  padding: 4px;
+  margin: 6px 0 20px 0;
+}
+
+.delvDetailsBtnBox {
+  text-align: right;
+}
+
+.delvDetailsBtnBox .delcDetailsBtn {
+  width: 130px;
+  height: 30px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  background-color: var(--mainOrange);
+  color: var(--mainWhite);
+}
+
+#contShopping .container {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contiShopBtn {
+  width: 190px;
+  height: 30px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  background-color: var(--mainOrange);
+  color: var(--mainWhite);
+}
+/*--------------------- Page: Cart ----------------*/
+
+/*--------------------- Footer -------------------*/
+footer {
+  background-color: var(--mainGray);
+  color: var(--mainWhite);
+  height: 100%;
+}
+
+footer .container {
+  margin: 0 20px;
+}
+
+footer .footerHeading h1 {
+  font-weight: 100;
+  font-size: 21px;
+  padding-bottom: 20px;
+  line-height: 27px;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+footer .content .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .content .contactDetails p {
+  padding: 9px 0;
+}
+
+footer .content .openTimes p {
+  padding: 9px 0;
+}
+
+footer .content .quickLinks p {
+  padding: 5px 0;
+}
+
+footer .content .quickLinks a {
+  text-decoration: none;
+  color: var(--mainWhite);
+}
+
+footer .content .quickLinks h4 {
+  padding: 9px 0;
+}
+
+footer .content .newsLetter #newsletterHeading {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 9px 0;
+}
+
+footer .content .newsLetter p {
+  padding: 5px 0;
+}
+
+footer .content .newsLetter .newsLetterBtn {
+  border: 2px solid var(--mainWhite);
+  padding: 2px 4px;
+  width: 8em;
+}
+
+footer .content .newsLetter .newsLetterInput {
+  font-size: 13px;
+  margin-top: 9px;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: var(--mainGray);
+  outline: none;
+  border: 1px solid var(--mainGray2);
+  color: var(--mainWhite);
+}
+
+.footerBottom {
+  background: #000;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+/*--------------------- Footer -------------------*/
+
+/*------------------ Order Page --------------- */
+.order .container {
+  margin: 50px 20px;
+}
+
+.order .container .content {
+  display: flex;
+}
+
+.order .container .content .left {
+  width: 50%;
+}
+
+.order .container .content .right {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.order .container .content .left .orderImg {
+  width: 100%;
+  height: 25em;
+  padding-bottom: 20px;
+}
+
+.order .container .content .left .orderImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order .container .content .left .orderSubImgBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 7em;
+  justify-content: space-evenly;
+  padding-left: 20px;
+}
+
+.order .container .content .left .orderSubImgBox .imgContainer {
+  width: 80%;
+  height: 100%;
+}
+
+.order .container .left .orderSubImgBox .imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order .container .content .right .desc {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.order .container .content .right .desc p {
+  padding-right: 55px;
+}
+
+.order .container .content .right .desc div .orderQnty {
+  width: 30px;
+}
+
+.order .container .content .right #price {
+  font-weight: lighter;
+}
+
+.orderBtn {
+  width: 80%;
+  height: 2.5em;
+  color: var(--mainWhite);
+  font-size: 16px;
+  border: none;
+  background-color: var(--mainGray);
+  margin: 9px 0 40px 20px;
+}
+
+.order .container .content .right .includes ul {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.foodSuggestion .container .content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.foodSuggestion .container .heading h3 {
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+.foodSuggestion .container .packageOption {
+  width: 60%;
+}
+
+.foodSuggestion .container .packageOption .pkgOptionImg {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+}
+
+.foodSuggestion .container .packageOption .pkgOptionImg img {
+  width: 65%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*------------------ Order Page --------------- */
+
+/*------------------- RESPONSIVE: Laptop L ---------------------*/
+@media only screen and (min-width: 2560px) {
+  .container {
+    margin: 170px 20px 0 20px;
+  }
+
+  .Gallery .container {
+    margin: 170px 20px;
+  }
+
+  .Gallery .container .content .imgContainer {
+    height: 40em;
+    width: 100%;
+  }
+
+  .ourServices .container {
+    margin-bottom: 60px;
+  }
+
+  header {
+    height: 7em;
+  }
+
+  .navMenu li a {
+    font-size: 32px;
+    padding: 17px 17px;
+  }
+
+  .logoImg {
+    width: 300px;
+    margin-top: 24px;
+  }
+
+  header.sticky {
+    height: 5.6em;
+    padding: 1% 4%;
+  }
+
+  .homeMainSect .homeDetails {
+    position: relative;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+  }
+
+  .heading h1 {
+    font-size: 60px;
+    margin: 0 0 50px 0;
+  }
+
+  .heading h4 {
+    font-size: 26px;
+    margin: 50px 0 1px 0;
+  }
+
+  p,
+  td {
+    font-size: 38px;
+  }
+  #pageHeading {
+    margin-top: 150px;
+    height: 18em;
+  }
+
+  #pageHeading h1 {
+    padding-top: 2em;
+    font-size: 55px;
+    margin-bottom: 30px;
+  }
+
+  .homeMainSect p {
+    color: var(--mainWhite);
+    font-size: 30px;
+    font-weight: 100;
+  }
+
+  .ourServices {
+    height: 100%;
+  }
+
+  .ourServices .container .content h4 {
+    font-weight: 100;
+    font-size: 40px;
+    margin: 5px 0 0 0;
+  }
+
+  .specialOccasion .container .pkgOptionHeading h4 {
+    font-weight: 100;
+    font-size: 40px;
+    margin: 5px 0 0 0;
+  }
+
+  .orderBtn-2 {
+    font-size: 35px;
+    height: 60px;
+    width: 200px;
+  }
+
+  .ourTeam .container .heading h1 {
+    font-size: 25px;
+  }
+
+  .Gallery .container .content .imgContainer .image-resize {
+    width: 100%;
+  }
+
+  .Gallery {
+    height: 100%;
+  }
+
+  .menus {
+    height: 100%;
+  }
+
+  .menus .menuList h3 {
+    font-size: 40px;
+  }
+
+  .menus .menuList div h3 {
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--mainWhite);
+    font-size: 70px;
+  }
+
+  .menus .menuList div #menuBtn {
+    position: relative;
+    bottom: 50%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    color: var(--mainWhite);
+    font-size: 40px;
+    height: 70px;
+    width: 240px;
+  }
+
+  .Gallery .content {
+    display: inline-flexbox;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .Gallery .container .heading {
+    margin: 16em 0 1em 0;
+  }
+
+  .menus .container .heading {
+    margin: 16em 0 1em 0;
+  }
+
+  #aboutUs .container .heading {
+    margin: 16em 0 1em 0;
+  }
+
+  .contactUs .container .heading {
+    margin: 16em 0 1em 0;
+  }
+
+  footer {
+    height: 100%;
+  }
+
+  footer .container .content {
+    margin: 0 40px 40px 40px;
+  }
+
+  footer .footerHeading h1 {
+    line-height: 50px;
+    padding-top: 40px;
+  }
+
+  footer p {
+    font-size: 29px;
+  }
+
+  footer .content .quickLinks h4 {
+    font-size: 30px;
+  }
+
+  footer .content .newsLetter #newsletterHeading {
+    font-size: 30px;
+  }
+
+  footer .content .newsLetter .newsLetterBtn {
+    padding: 9px 4px;
+    width: 12em;
+    font-size: 30px;
+  }
+
+  #aboutUs::after {
+    height: 0px;
+  }
+
+  #aboutUs .container .content .right h2 {
+    font-weight: 100;
+    padding: 30px 0;
+    font-size: 40px;
+    font-family: "Benne";
+  }
+
+  .ourTeam .container .heading h1 {
+    color: var(--mainBlack);
+    font-size: 40px;
+    padding: 40px 0 0 0;
+  }
+
+  footer .footerHeading h1 {
+    font-weight: 100;
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  .homeMainSect .homeDetails .homeMainDesc p {
+    font-size: 20px;
+    padding: 30px 0 80px 0;
+  }
+
+  .homeMainSect .homeDetails h1 {
+    color: #fff;
+    font-size: 7em;
+    margin-bottom: 10px;
+  }
+
+  .homeMainSect {
+    background-position-y: -1050px;
+  }
+
+  .Orderbtn {
+    border: 1px solid var(--mainWhite);
+    outline: none;
+    height: 70px;
+    width: 190px;
+    font-size: 34px;
+    z-index: 1;
+    color: var(--mainWhite);
+    position: relative;
+    transition: 0.4s ease-out;
+    background: none;
+    overflow: hidden;
+  }
+
+  .homeIntro .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .homeIntro .container .content .left {
+    padding-right: 60px;
+    height: 100%;
+  }
+
+  .homeIntro .container .content .right .heading {
+    text-align: left;
+    padding-top: 9px;
+    width: 100%;
+  }
+
+  .homeIntro .container .content .left img {
+    width: 100%;
+    height: 50em;
+  }
+
+  .ourServices .container .content img {
+    width: 95%;
+  }
+
+  .figures {
+    height: 100%;
+    padding: 90px;
+    margin: 0;
+  }
+
+  .figures .content {
+    margin-top: 10%;
+  }
+
+  .figures .content img {
+    width: 18em;
+    padding: 2px;
+  }
+
+  .figures .content div p {
+    font-size: 50px;
+    padding-left: 3px;
+  }
+
+  .contactUs {
+    height: 70vh;
+  }
+
+  /*----------- Login Page + Registration --------- */
+  .login-Form {
+    top: 50%;
+  }
+
+  .login-Heading {
+    margin-bottom: 4em;
+  }
+
+  .login-Heading h2 {
+    font-size: 4em;
+  }
+
+  .login-Heading h4 {
+    font-size: 17px;
+  }
+
+  .logo-img {
+    width: 14em;
+    margin: 20px;
+  }
+
+  .login-Form .details .input-section {
+    margin-bottom: 15px;
+    opacity: 1;
+  }
+
+  .login-Form .details .input-section input[type="text"] {
+    width: 20em;
+    padding: 15px;
+    padding-left: 13px;
+    font-size: 17px;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 17em;
+    height: 2.6em;
+    margin: 10px;
+    font-size: 19px;
+  }
+
+  .login-Form p {
+    font-size: 22px;
+  }
+  /*--------- Login Page + Registration ------ */
+  /*--------------------- Page: Cart ----------------*/
+  .orderDImg {
+    width: 200px;
+  }
+
+  td {
+    padding: 20px 50px 20px 60px;
+  }
+
+  .price {
+    padding-left: 34em;
+  }
+
+  .orderDetails .itemRemoveBtn {
+    width: 150px;
+    height: 40px;
+    font-size: 27px;
+    background: var(--mainOrange);
+    border: none;
+    color: var(--mainWhite);
+  }
+
+  .delivery .deliveryBox {
+    position: relative;
+    left: 50%;
+    width: 50%;
+  }
+
+  .deliveryBox .deliveryHeader {
+    display: flex;
+    align-items: center;
+    background-color: var(--mainOrange);
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    color: var(--mainWhite);
+  }
+
+  .deliveryBox .deliveryHeader h1 {
+    font-size: 30px;
+  }
+
+  .deliveryBox img {
+    width: 80px;
+  }
+
+  .deliveryDetailsInput {
+    width: 99%;
+    border: 2px solid var(--mainOrange);
+    outline: none;
+    padding: 7px;
+    margin: 6px 0 20px 0;
+    font-size: 30px;
+  }
+
+  .delvDetailsBtnBox {
+    text-align: right;
+  }
+
+  .delvDetailsBtnBox .delcDetailsBtn {
+    width: 220px;
+    height: 45px;
+    font-size: 30px;
+  }
+
+  .contiShopBtn {
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: var(--mainOrange);
+    color: var(--mainWhite);
+  }
+  /*--------------------- Page: Cart ----------------*/
+}
+/*------------------- RESPONSIVE: Laptop L ---------------------*/
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    margin: 90px 10px 0 10px;
+  }
+
+  .Gallery .container {
+    margin: 90px 10px;
+  }
+
+  .Gallery .container .content .imgContainer {
+    height: 20em;
+    width: 100%;
+  }
+
+  .ourServices .container {
+    margin-bottom: 60px;
+  }
+
+  .navCart {
+    width: 20px;
+    height: 20px;
+    padding-left: 30px;
+  }
+
+  #pageHeading {
+    background: url("images/headingImg1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 11em;
+    margin-top: 4em;
+    text-align: center;
+  }
+
+  #pageHeading h1 {
+    font-size: 50px;
+    padding-top: 1.3em;
+    margin-bottom: 30px;
+  }
+
+  .heading h1 {
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .heading h4 {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  footer p {
+    font-size: 17px;
+  }
+
+  p,
+  ul li,
+  label,
+  input,
+  tr {
+    font-size: 20px;
+    border: none;
+  }
+.itemQty{
+  width: 50px;
+}
+  .logoImg {
+    width: 130px;
+    margin-top: 10px;
+  }
+
+  .homeMainSect {
+    background-position-y: -800px;
+  }
+
+  .homeMainSect .homeDetails {
+    position: relative;
+    left: 70%;
+    top: 53%;
+    width: 60%;
+  }
+
+  .homeMainSect .homeDetails p {
+    font-size: 12px;
+  }
+
+  .homeMainSect .homeDetails .homeMainDesc {
+    margin: 10px 0 3px 0;
+    font-size: 11px;
+    font-weight: 100;
+  }
+
+  .homeMainSect .homeDetails h1 {
+    font-size: 57px;
+    margin-top: 9px;
+  }
+
+  .homeMainSect .homeDetails .homeMainDesc p {
+    font-size: 9px;
+  }
+
+  .Orderbtn {
+    height: 30px;
+    width: 90px;
+    font-size: 15.4px;
+  }
+
+  .navBar {
+    height: 4.7em;
+  }
+
+  .navMenu li a {
+    font-size: 15px;
+  }
+
+  .homeIntro .container {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+
+  .homeIntro .container .content .left {
+    padding-right: 30px;
+  }
+
+  .homeIntro .container .content .right .heading {
+    width: 100%;
+  }
+
+  .homeIntro .container .content .right .heading h4 {
+    margin-top: 9px;
+  }
+
+  .ourServices .container .content h4 {
+    font-size: 23px;
+    padding-top: 9px;
+  }
+
+  .ourServices .container .content img {
+    width: 90%;
+  }
+
+  .specialOccasion {
+    height: 100%;
+  }
+
+  .specialOccasion .container .pkgOptionHeading h4 {
+    font-size: 23px;
+    padding-top: 9px;
+  }
+
+  .specialOccasion .container .packageOption {
+    margin: 0 10px;
+  }
+
+  .orderBtn-2 {
+    font-size: 18px;
+    height: 33px;
+    width: 100px;
+  }
+
+  .Gallery {
+    height: 100%;
+  }
+
+  #aboutUs .container .heading,
+  .contactUs .container .heading,
+  .Gallery .container .heading,
+  .menus .container .heading {
+    margin: 6em 0 1em 0;
+  }
+
+  .ourTeam .container .heading h1 {
+    padding-top: 0;
+  }
+
+  .menus .menuList div h3 {
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--mainWhite);
+    font-size: 35px;
+  }
+
+  .menus .menuList div #menuBtn {
+    position: relative;
+    bottom: 50%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    color: var(--mainWhite);
+    border: 1px;
+  }
+
+  .figures {
+    height: 100%;
+    padding: 90px;
+    margin: 0;
+  }
+
+  .figures .content {
+    margin-top: 10%;
+  }
+
+  .figures .content img {
+    width: 9em;
+    padding: 2px;
+  }
+
+  .figures .content div p {
+    font-size: 25px;
+    padding-left: 3px;
+  }
+
+  footer .content .footerHeading h1 {
+    font-size: 22x;
+  }
+
+  .footerBottom p {
+    font-size: 10px;
+  }
+
+  footer .content {
+    margin: 0 40px 40px 40px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  #aboutUs .container {
+    margin: 40px;
+  }
+
+  footer .container {
+    margin: 0;
+  }
+
+  .delivery .deliveryBox {
+    position: relative;
+    left: 50%;
+    width: 50%;
+  }
+
+  .deliveryDetailsInput {
+    width: 98%;
+  }
+  /*----------------- Startup Page ------------ */
+  .loginType-img {
+    width: 9em;
+    margin: 2.7em auto;
+  }
+
+  .login-Type {
+    margin: 40px auto;
+    background-color: var(--mainOrange);
+    width: 17em;
+    height: 19em;
+    border-radius: 20px;
+  }
+
+  .startUp-container h3 {
+    font-size: 25px;
+  }
+
+  .startUp-container h1 {
+    font-size: 2em;
+    margin: 20px auto;
+  }
+  /*------------------ Startup Page --------*/
+
+  /*----------- Login Page + Registration --------- */
+  .login-Form {
+    top: 50%;
+  }
+
+  .login-Heading {
+    margin-bottom: 4em;
+  }
+
+  .login-Heading h2 {
+    font-size: 2.3em;
+  }
+
+  .login-Heading h4 {
+    font-size: 17px;
+  }
+
+  .logo-img {
+    width: 10.4em;
+    margin: 20px;
+  }
+
+  .login-Form .details .input-section {
+    margin-bottom: 15px;
+    opacity: 1;
+  }
+
+  .login-Form .details .input-section input[type="text"] {
+    width: 17em;
+    padding: 12px;
+    padding-left: 13px;
+    font-size: 17px;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 16em;
+    height: 2.3em;
+    margin: 10px;
+    font-size: 19px;
+  }
+
+  .login-Form p {
+    font-size: 16px;
+  }
+  /*--------- Login Page + Registration ------ */
+
+  /*------------------ Order Page --------------- */
+  .order .container {
+    margin: 20px 10px;
+  }
+
+  .order .container .content {
+    display: flex;
+  }
+
+  .order .container .content .left {
+    width: 60%;
+  }
+
+  .order .container .content .right {
+    width: 50%;
+    padding-left: 30px;
+  }
+
+  .order .container .content .left .orderImg {
+    width: 100%;
+    height: 34em;
+    padding-bottom: 10px;
+  }
+
+  .order .container .content .left .orderSubImgBox {
+    height: 8em;
+    padding-left: 10px;
+  }
+
+  .order .container .content .left .orderSubImgBox .imgContainer {
+    width: 90%;
+    height: 100%;
+  }
+
+  .order .container .left .orderSubImgBox .imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .order .container .content .right h1 {
+    font-size: 35px;
+  }
+
+  .order .container .content .right .desc {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+  }
+
+  .order .container .content .right .desc p {
+    padding-right: 35px;
+  }
+
+  .order .container .content .right .desc div .orderQnty {
+    width: 30px;
+  }
+
+  .order .container .content .right #price {
+    font-weight: lighter;
+    font-size: 24px;
+  }
+
+  .orderBtn {
+    width: 80%;
+    height: 2.5em;
+    font-size: 19px;
+    margin: 17px 0 50px 10px;
+  }
+
+  .order .container .content .right .includes ul {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .foodSuggestion .container {
+    margin: 0 200px;
+  }
+
+  .foodSuggestion .container .heading h3 {
+    margin-bottom: 30px;
+    font-weight: lighter;
+    font-size: 13px;
+  }
+
+  .foodSuggestion .container .packageOption {
+    width: 60%;
+  }
+
+  .foodSuggestion .container .packageOption .pkgOptionImg {
+    width: 100%;
+    height: 63%;
+  }
+
+  .foodSuggestion .container .packageOption .pkgOptionImg img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .price {
+    padding-left: 33em;
+  }
+}
+
+/*--------------- RESPONSIVE: Mobile L+ (Tablet) ---------------*/
+@media only screen and (max-width: 1024px) {
+  .container,
+  .Gallery .container {
+    margin: 60px 10px;
+  }
+
+  .ourServices .container {
+    margin-bottom: 40px;
+  }
+
+  .specialOccasion .container {
+    margin-bottom: 0;
+  }
+
+  .Gallery .container .content .imgContainer {
+    height: 15em;
+    width: 100%;
+  }
+
+  .navBar {
+    height: 4em;
+  }
+
+  .navMenu li a {
+    font-size: 14px;
+  }
+
+  header.sticky {
+    height: 3em;
+  }
+
+  .logoImg {
+    margin-top: 5px;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .heading h1 {
+    font-size: 30px;
+    margin-top: 1px;
+    margin-bottom: 25px;
+  }
+
+  .heading h4 {
+    font-size: 10px;
+  }
+
+  p,
+  ul li,
+  label,
+  input,
+  tr {
+    font-size: 16px;
+  }
+
+  #pageHeading {
+    height: 9em;
+  }
+
+  #pageHeading h1 {
+    padding-top: 1.1em;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .homeMainSect {
+    background-position-y: -350px;
+  }
+  .homeMainSect .homeDetails h1 {
+    font-size: 50px;
+    margin-top: 23px;
+  }
+
+  .homeMainSect .homeDetails {
+    left: 67%;
+  }
+
+  .homeMainSect .homeDetails p {
+    font-size: 14px;
+  }
+
+  .homeMainSect .homeDetails .homeMainDesc p {
+    line-height: 12px;
+    font-size: 10px;
+  }
+
+  .ourServices .container .content h4 {
+    font-size: 18px;
+    padding-top: 9px;
+  }
+
+  .specialOccasion .container .pkgOptionHeading h4 {
+    font-size: 18px;
+    padding-top: 9px;
+  }
+
+  .ourServices .container .content img {
+    width: 95%;
+  }
+
+  .orderBtn-2 {
+    width: 98px;
+    font-size: 17px;
+  }
+
+  footer .content .footerHeading h1 {
+    font-size: 17px;
+  }
+
+  .figures {
+    height: 100%;
+    padding: 60px;
+    margin: 0;
+  }
+
+  .figures .content {
+    margin-top: 10%;
+  }
+
+  .figures .content img {
+    width: 7em;
+    padding: 2px;
+  }
+
+  .figures .content div p {
+    font-size: 25px;
+    padding-left: 3px;
+  }
+
+  .menus .menuList div h3 {
+    color: var(--mainWhite);
+    font-size: 30px;
+  }
+
+  .menus .menuList div #menuBtn {
+    left: 14%;
+    font-size: 16px;
+    height: 30px;
+    width: 90px;
+  }
+
+  #aboutUs .container .heading,
+  .contactUs .container .heading,
+  .Gallery .container .heading,
+  .menus .container .heading {
+    margin: 6em 0 1em 0;
+  }
+
+  .foodSuggestion .container .heading h3 {
+    margin-top: 90px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+    font-size: 18px;
+  }
+
+  .order .container .content .left .orderImg {
+    height: 23em;
+    padding-left: 10px;
+  }
+
+  .order .container .content .left .orderSubImgBox .imgContainer {
+    width: 85%;
+    height: 100%;
+  }
+
+  .order .container .content .right h1 {
+    font-size: 26px;
+  }
+
+  .order .container .content .right .desc {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+  }
+
+  .order .container .content .right .desc p {
+    padding-right: 50px;
+  }
+
+  .order .container .content .right .desc div .orderQnty {
+    width: 30px;
+  }
+
+  .order .container .content .right #price {
+    font-weight: lighter;
+    font-size: 20px;
+  }
+
+  .orderBtn {
+    width: 80%;
+    height: 2.5em;
+    font-size: 16px;
+    margin: 20px 0 50px 10px;
+  }
+
+  .order .container .content .left .orderSubImgBox .imgContainer {
+    height: 90%;
+  }
+
+  .foodSuggestion .container {
+    margin: 0 140px;
+  }
+
+  .foodSuggestion .container .packageOption .pkgOptionImg img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .price {
+    padding-left: 23em;
+  }
+
+  .deliveryDetailsInput {
+    width: 98%;
+  }
+
+  #aboutUs .container .content .right h2 {
+    font-size: 22px;
+  }
+}
+/*---------------- RESPONSIVE: Mobile L (Tablet) -------------- */
+@media only screen and (max-width: 768px) {
+  .container,
+  .Gallery .container {
+    margin: 40px 10px;
+  }
+
+  #aboutUs .container {
+    margin: 40px 10px;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .heading h1 {
+    font-size: 23px;
+    margin-top: 1px;
+    margin-bottom: 15px;
+  }
+
+  .heading h4 {
+    font-size: 9px;
+  }
+
+  p,
+  ul li,
+  label,
+  tr {
+    font-size: 12px;
+  }
+
+  .navMenu li:last-child {
+    display: none;
+  }
+
+  #pageHeading {
+    height: 8em;
+  }
+
+  #pageHeading h1 {
+    padding-top: 1.7em;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .homeMainSect {
+    height: 66vh;
+    background-position-y: -350px;
+  }
+
+  .homeMainSect .homeDetails {
+    top: 53%;
+  }
+
+  .homeMainSect .homeDetails p {
+    font-size: 10px;
+  }
+
+  .homeMainSect .homeDetails .homeMainDesc p {
+    margin: 0;
+    line-height: 10px;
+    font-size: 8px;
+    font-weight: 100;
+  }
+
+  .homeMainSect .homeDetails h1 {
+    font-size: 44px;
+    margin-top: 1px;
+  }
+
+  .homeMainSect .homeDetails h4 {
+    font-size: 12px;
+  }
+
+  .Orderbtn {
+    height: 28px;
+    width: 90px;
+    font-size: 12.4px;
+    background-color: transparent;
+  }
+
+  .orderBtn-2 {
+    border: none;
+    outline: none;
+    height: 27px;
+    width: 89px;
+    font-size: 14px;
+    margin-top: 17px;
+  }
+
+  .homeIntro .hHeading {
+    width: 90%;
+    text-align: left;
+  }
+
+  .homeIntro {
+    text-align: left;
+    width: 100%;
+  }
+
+  .homeIntro .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .homeIntro .container .content .left {
+    padding-right: 15px;
+  }
+
+  .homeIntro .container .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .homeIntro .container .content .left {
+    height: 19em;
+  }
+
+  .homeIntro .container .content.margin1 {
+    margin: 0;
+  }
+
+  .homeIntro .container .content .left img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .homeIntro .container .content .right {
+    text-align: left;
+    width: 90%;
+  }
+
+  .homeIntro .container .content .right .heading {
+    width: 95%;
+  }
+
+  .homeIntro .container .content .right h4 {
+    margin-top: 0;
+  }
+
+  .homeIntro .container .content .right .heading {
+    text-align: left;
+  }
+
+  .ourServices {
+    height: 100%;
+  }
+
+  .ourServices .container .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .ourServices .container .content img {
+    object-fit: cover;
+    padding: 0;
+  }
+
+  .ourServices .container .content h4 {
+    font-weight: 100;
+    font-size: 13px;
+    margin: 5px 0 0 0;
+  }
+
+  .specialOccasion .container .packageOption h4 {
+    font-weight: 100;
+    font-size: 13px;
+    margin: 5px 0 0 0;
+  }
+
+  .figures {
+    height: 100%;
+    padding: 30px;
+    margin: 0;
+  }
+
+  .figures .content {
+    margin-top: 10%;
+  }
+
+  .figures .content img {
+    width: 5em;
+    padding: 2px;
+  }
+
+  .figures .content div p {
+    font-size: 25px;
+    padding-left: 3px;
+  }
+
+  .figures .content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .figures .content div p {
+    font-size: 17px;
+  }
+
+  .specialOccasion {
+    height: 100%;
+  }
+
+  /*----- Cart ----*/
+  td {
+    padding: 10px 20px;
+  }
+  .price {
+    padding-left: 21em;
+  }
+
+  .deliveryDetailsInput {
+    width: 97%;
+  }
+  /*----- Cart ----*/
+
+  .Gallery {
+    height: 100%;
+  }
+
+  .Gallery .container .content {
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .Gallery .container .content .image-resize {
+    width: 100%;
+  }
+
+  .menus {
+    height: 100%;
+  }
+
+  .menus .menuList {
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+  }
+
+  .menus .menuList .image {
+    width: 95%;
+  }
+
+  .menus .menuList div h3 {
+    color: var(--mainWhite);
+    font-size: 21px;
+  }
+
+  #aboutUs .container .heading,
+  .contactUs .container .heading,
+  .Gallery .container .heading,
+  .menus .container .heading {
+    margin: 6em 0 1em 0;
+  }
+
+  .menus .menuList div #menuBtn {
+    left: 15%;
+    font-size: 13px;
+    height: 25px;
+    width: 76px;
+  }
+
+  .Gallery .container .content .imgContainer {
+    height: 13em;
+    width: 100%;
+  }
+
+  .Gallery .container .content .imgContainer .image-resize {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ourTeam .container {
+    text-align: center;
+  }
+
+  /*------- ContactUS ------*/
+  .contactUs {
+    height: 100%;
+  }
+
+  .contactUs .container {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .contactUs .container .content .contentBx {
+    display: flex;
+  }
+
+  .contactUs .container .content .contentBx .contactFormContainer {
+    width: 50%;
+    height: 100%;
+  }
+
+  .headingC {
+    text-align: center;
+    width: 40%;
+  }
+
+  .headingC h1 {
+    font-size: 16px;
+  }
+
+  .contactUs .container .content .contentBx .contactFormContainer h1 {
+    margin-bottom: 30px;
+  }
+
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputContainer .input {
+    width: 75%;
+    height: 20px;
+    color: var(--mainBlack);
+    padding: 3px;
+    margin: 2px 0;
+    font-size: 12px;
+    border: 2px solid var(--mainOrange);
+  }
+
+  .inputContainer label {
+    margin-top: 20px;
+    color: var(--mainOrange);
+    font-size: 13px;
+  }
+
+  .inputContainer .textarea {
+    height: 170px;
+  }
+
+  .map {
+    width: 50%;
+  }
+
+  iframe {
+    height: 22em;
+    width: 100%;
+  }
+
+  .contactDetailsS {
+    margin-top: 50px;
+    display: flex;
+  }
+
+  .contactDetailsS div {
+    margin-right: 80px;
+  }
+
+  .contactDetailsS p {
+    font-size: 13px;
+    padding-bottom: 15px;
+  }
+
+  .contactDetailsS .cdHeadings p {
+    color: var(--mainOrange);
+    font-size: 13px;
+  }
+  /*------- ContactUS ------*/
+  header {
+    transition: 0.7s;
+    height: 4em;
+  }
+
+  header.sticky {
+    height: 3em;
+  }
+
+  header .navMenu {
+    background: var(--mainBlack);
+  }
+
+  .navBar {
+    justify-content: space-between;
+  }
+
+  .logoImg {
+    width: 140px;
+    margin-top: 4px;
+  }
+
+  .navMenu {
+    position: fixed;
+    left: -100%;
+    top: 6rem;
+    flex-direction: column;
+    background: var(--mainBlack);
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 99;
+  }
+
+  header.sticky .navMenu {
+    top: 9rem;
+  }
+
+  header ul li a {
+    color: white;
+  }
+
+  .navMenu.active {
+    left: 0;
+  }
+
+  header li {
+    margin: 0.2rem 0;
+  }
+
+  header li:hover {
+    background-color: var(--mainBlack);
+  }
+
+  .navMenu .singInBtn a {
+    border: none;
+  }
+
+  .navMenu.sticky .singInBtn a {
+    border: none;
+  }
+
+  .singInBtn a:hover {
+    background: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /*------------ Footer ---------*/
+  footer {
+    height: 100%;
+  }
+
+  footer .content .footerHeading h1 {
+    font-weight: 100;
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  footer .content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+  }
+
+  footer .content .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  footer .content .info .contactDetails p {
+    font-size: 11px;
+  }
+
+  footer .content .contactDetails p {
+    padding-bottom: 6px;
+    font-size: 10px;
+  }
+
+  footer .content .quickLinks a {
+    text-decoration: none;
+    color: var(--mainWhite);
+    font-size: 11px;
+  }
+
+  footer .content .quickLinks p {
+    padding-bottom: 2px;
+  }
+
+  footer .content .newsLetter #newsletterHeading {
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+  footer .content .openTimes p {
+    font-size: 11px;
+    padding-bottom: 2px;
+  }
+
+  .newsLetter {
+    text-align: left;
+    padding-bottom: 0px;
+  }
+
+  footer .content .newsLetter p {
+    padding: 2px;
+    font-size: 11px;
+  }
+
+  footer .content .newsLetter .newsLetterInput {
+    font-size: 10px;
+    margin-top: 9px;
+    padding: 5px;
+    padding-left: 10px;
+  }
+
+  footer .content {
+    margin: 0 7px 7px 7px;
+  }
+
+  .footerBottom p {
+    font-size: 8px;
+  }
+  /*-------- Footer ---------*/
+
+  /*----------- Login Page + Registration --------- */
+  .login-Form {
+    top: 49%;
+  }
+
+  .login-Heading {
+    margin-bottom: 1.5em;
+  }
+
+  .login-Heading h2 {
+    font-size: 1.2em;
+  }
+
+  .login-Heading h4 {
+    font-size: 10px;
+  }
+
+  .logo-img {
+    width: 6em;
+    margin: 20px;
+  }
+
+  .login-Form .details .input-section {
+    margin-bottom: 15px;
+    opacity: 1;
+  }
+
+  .login-Form .details .input-section input[type="text"] {
+    width: 16em;
+    padding: 9px;
+    font-size: 11px;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 13.8em;
+    height: 2.1em;
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .login-Form p {
+    font-size: 11px;
+  }
+  /*--------- Login Page + Registration ------ */
+
+  /*----------------- Startup Page ------------ */
+  .loginType-img {
+    width: 5em;
+    margin: 2em auto;
+  }
+
+  .login-Type {
+    width: 10em;
+    height: 12em;
+    border-radius: 20px;
+  }
+
+  .startUp-container h3 {
+    font-size: 18px;
+  }
+
+  .startUp-container h1 {
+    font-size: 1.7em;
+    margin: 20px auto;
+  }
+  /*------------------ Startup Page --------------- */
+
+  .foodSuggestion .container {
+    margin: 0 170px;
+  }
+
+  .foodSuggestion .container .packageOption .pkgOptionImg img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*------------------ Order Page --------------- */
+  .order .container {
+    margin: 20px 10px;
+  }
+
+  .order .container .content {
+    display: flex;
+  }
+
+  .order .container .content .left {
+    width: 60%;
+  }
+
+  .order .container .content .right {
+    width: 50%;
+    padding-left: 30px;
+  }
+
+  .order .container .content .left .orderImg {
+    width: 100%;
+    height: 19em;
+    padding-bottom: 20px;
+  }
+
+  .order .container .content .left .orderSubImgBox {
+    height: 5em;
+    padding-left: 10px;
+  }
+
+  .order .container .content .left .orderSubImgBox .imgContainer {
+    width: 80%;
+    height: 100%;
+  }
+
+  .order .container .left .orderSubImgBox .imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .order .container .content .right h1 {
+    font-size: 22px;
+  }
+
+  .order .container .content .right .desc {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+  }
+
+  .order .container .content .right .desc p {
+    padding-right: 60px;
+  }
+
+  .order .container .content .right .desc div .orderQnty {
+    width: 30px;
+  }
+
+  .order .container .content .right #price {
+    font-weight: lighter;
+    font-size: 17px;
+  }
+
+  .orderBtn {
+    width: 80%;
+    height: 2.2em;
+    font-size: 14px;
+    margin: 15px 0 30px 10px;
+  }
+
+  .order .container .content .right .includes ul {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .foodSuggestion .container {
+    margin: 0 120px;
+  }
+
+  .foodSuggestion .container .heading h3 {
+    margin-top: 90px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+
+  .foodSuggestion .container .packageOption {
+    width: 60%;
+  }
+
+  .foodSuggestion .container .packageOption .pkgOptionImg {
+    width: 100%;
+    height: 65%;
+  }
+
+  /*------------------ Order Page --------------- */
+}
+/*------------------ RESPONSIVE: Mobile L (Tablet) ----------------- */
+
+@media only screen and (max-width: 620px) {
+  .heading h1 {
+    font-size: 26px;
+  }
+
+  .heading h4 {
+    font-size: 9px;
+    margin: 0;
+  }
+
+  .homeMainSect {
+    background-position-y: -200px;
+  }
+
+  .homeMainSect .homeDetails p {
+    font-size: 11px;
+  }
+
+  .homeMainSect .homeDetails h1 {
+    font-size: 26px;
+    margin: 13px 0 20px 0;
+  }
+
+  .homeMainSect .homeDetails h4 {
+    font-size: 12px;
+  }
+
+  .ourServices .container .content h4 {
+    margin: 3px 0 0 0;
+    font-weight: 100;
+    font-size: 12px;
+  }
+
+  .Orderbtn {
+    height: 22px;
+    width: 85px;
+  }
+
+  .orderBtn-2 {
+    border: none;
+    outline: none;
+    height: 25px;
+    width: 80px;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .figures {
+    height: 100%;
+  }
+
+  .figures .content img {
+    width: 3em;
+  }
+
+  .figures .content div p {
+    font-size: 16px;
+  }
+
+  .singInBtn a {
+    border: none;
+  }
+
+  .singInBtn a:hover {
+    background: none;
+  }
+
+  .contactUs .container .content .contentBx {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .contactUs {
+    height: 100%;
+  }
+
+  .contactUs .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contactUs .container .content .contentBx .contactFormContainer {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .headingC {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contactUs .container .content .contentBx .contactFormContainer h1 {
+    margin-bottom: 30px;
+  }
+
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputContainer .input {
+    outline: none;
+    width: 250px;
+    height: 20px;
+    color: var(--mainBlack);
+    padding: 3px;
+    margin: 2px 0;
+    font-size: 14px;
+    border: 2px solid var(--mainOrange);
+  }
+
+  .inputContainer label {
+    margin-top: 20px;
+    color: var(--mainOrange);
+    font-size: 13px;
+  }
+
+  .inputContainer .textarea {
+    height: 150px;
+  }
+
+  .map {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  iframe {
+    height: 22em;
+    width: 100%;
+  }
+
+  .contactDetailsS {
+    margin-top: 50px;
+    display: flex;
+  }
+
+  .contactDetailsS div {
+    margin-right: 100px;
+  }
+
+  .contactDetailsS p {
+    font-size: 13px;
+    padding-bottom: 15px;
+  }
+
+  .contactDetailsS .cdHeadings p {
+    color: var(--mainOrange);
+    font-size: 13px;
+  }
+
+  /*----------------- Startup Page ------------ */
+  .loginType-img {
+    width: 5em;
+    margin: 2em auto;
+  }
+
+  .login-Type {
+    width: 10em;
+    height: 13em;
+  }
+
+  .startUp-container h3 {
+    font-size: 17px;
+  }
+
+  .startUp-container h1 {
+    font-size: 1.5em;
+    margin: 20px auto;
+  }
+  /*------------------ Startup Page --------------- */
+}
+
+/*------------------ RESPONSIVE -------------- */
+
+@media only screen and (max-width: 885px) {
+  .navBar {
+    justify-content: space-between;
+    padding: 1% 4%;
+  }
+
+  .navMenu li {
+    padding: 10px;
+  }
+}
+
+/*------------------ RESPONSIVE -------------- */
+
+/*------------------ RESPONSIVE: Mobile S -------------- */
+@media only screen and (max-width: 425px) {
+  .container {
+    margin: 50px 10px;
+  }
+
+  .specialOccasion .container {
+    margin-bottom: 50px;
+  }
+
+  .menus .container,
+  .Gallery .container,
+  .contactUs .container,
+  #aboutUs .container {
+    margin: 20px 10px;
+  }
+
+  .Gallery .container .content {
+    padding: 0;
+  }
+
+  #pageHeading {
+    height: 7em;
+  }
+
+  #pageHeading h1 {
+    padding-top: 1em;
+  }
+
+  .bar {
+    width: 19px;
+    height: 2px;
+    margin: 6px auto;
+  }
+
+  .navBar {
+    height: 3.6em;
+    padding: 1% 4% 1% 0px;
+  }
+
+  header.sticky {
+    padding: 1% 4% 1% 0px;
+  }
+
+  .logoImg {
+    width: 120px;
+  }
+  .heading {
+    text-align: center;
+  }
+
+  .heading h1 {
+    font-size: 26px;
+  }
+
+  .heading h4 {
+    font-size: 8.5px;
+    margin-bottom: 1px;
+  }
+
+  p,
+  ul li,
+  label,
+  input {
+    font-size: 11px;
+  }
+
+  ul li {
+    font-size: 11px;
+  }
+
+  .homeMainSect .homeDetails .homeMainDesc {
+    display: none;
+  }
+
+  .homeMainSect {
+    height: 38vh;
+    background-position-y: -102px;
+  }
+
+  .homeMainSect .homeDetails .homeMainDesc {
+    display: none;
+  }
+
+  .homeDetails {
+    width: 40%;
+  }
+  .homeMainSect .homeDetails {
+    top: 50%;
+    left: 67%;
+    width: 59%;
+  }
+
+  .homeMainSect .homeDetails p {
+    font-size: 7px;
+  }
+
+  .homeMainSect .homeDetails h1 {
+    font-size: 27px;
+    margin: 4px;
+  }
+
+  .Orderbtn {
+    height: 17px;
+    width: 70px;
+    font-size: 9.4px;
+    margin-top: 1px;
+    background-color: transparent;
+    border: 1px solid var(--mainWhite);
+    color: var(--mainWhite);
+  }
+
+  .Orderbtn::before {
+    background: none;
+    color: var(--mainWhite);
+  }
+  .orderBtn-2 {
+    border: none;
+    outline: none;
+    height: 25px;
+    width: 80px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    background-color: var(--mainOrange);
+    color: var(--mainWhite);
+  }
+
+  .orderBtn-2:hover {
+    color: var(--mainWhite);
+  }
+
+  .ourServices .container .content div:last-child .orderBtn-2:last-child {
+    margin-bottom: 0px;
+  }
+
+  .homeIntro .hHeading {
+    width: 90%;
+    text-align: left;
+  }
+
+  .homeIntro {
+    text-align: left;
+  }
+
+  .homeIntro .container {
+    margin: 5px 5px 50px 5px;
+  }
+
+  .homeIntro .container .content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .homeIntro .container .content .left {
+    height: 18em;
+    padding-right: 0;
+  }
+
+  .homeIntro .container .content .left img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .homeIntro .container .content .right {
+    width: 87%;
+  }
+
+  .homeIntro .container .content .right {
+    text-align: left;
+    width: 87%;
+  }
+  .homeIntro .container .content .right p,
+  .homeIntro .container .content .right .heading {
+    padding-left: 20px;
+  }
+
+  .homeIntro .container .content .right .heading {
+    text-align: left;
+  }
+
+  .homeIntro .container .content .right h4 {
+    margin-top: 20px;
+  }
+
+  .ourServices {
+    height: 100%;
+  }
+
+  .ourServices .container .content div {
+    height: 20em;
+    margin: 0;
+  }
+
+  .ourServices .container .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .ourServices .container .content img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+  }
+  .ourServices .container .content h4 {
+    margin: 7px 0 0 0;
+    font-weight: 100;
+    font-size: 16px;
+  }
+
+  #aboutUs .container .content .right h2 {
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 20px;
+  }
+
+  .ourTeam .container .heading h1 {
+    padding: 10px 0 0 0;
+    font-size: 18px;
+  }
+
+  .figures {
+    height: 100%;
+    padding: 30px;
+    margin: 0;
+  }
+
+  .figures .content img {
+    width: 3.5em;
+    padding: 2px;
+  }
+
+  .figures .content div p {
+    font-size: 14px;
+    padding-left: 3px;
+  }
+
+  .figures .content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 15%;
+  }
+
+  .ourServices .container .content h4 {
+    font-weight: 100;
+    font-size: 13px;
+    margin: 5px 0 0 0;
+  }
+
+  .specialOccasion .container .content .pkgOptionHeading h4 {
+    margin-bottom: 25px;
+  }
+
+  .specialOccasion .container .packageOption {
+    margin: 0;
+  }
+
+  .specialOccasion
+    .container
+    .content
+    .packageOption:last-child
+    .pkgOptionHeading:last-child
+    h4 {
+    margin-bottom: 0px;
+  }
+
+  .specialOccasion .container .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .specialOccasion .container .packageOption {
+    height: 20em;
+  }
+
+  .specialOccasion .container .packageOption .pkgOptionImg {
+    width: 100%;
+    height: 80%;
+    text-align: center;
+  }
+
+  .Gallery {
+    height: 100%;
+  }
+
+  .Gallery .container {
+    text-align: center;
+  }
+
+  .Gallery .container .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+  }
+
+  .Gallery .container .content .imgContainer .image-resize {
+    width: 100%;
+  }
+
+  .Gallery .container .content .imgContainer {
+    height: 16em;
+    width: 100%;
+  }
+
+  .menus {
+    height: 100%;
+  }
+
+  .menus .menuList {
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+  }
+
+  .menus .menuList div h3 {
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--mainWhite);
+    font-size: 20px;
+  }
+
+  .menus .menuList div #menuBtn {
+    position: relative;
+    bottom: 50%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    font-size: 11px;
+    height: 20px;
+  }
+
+  .menus .menuList div .image {
+    width: 100%;
+    height: 95%;
+  }
+
+  .ourTeam .container {
+    text-align: center;
+  }
+
+  /*------- ContactUS ------*/
+  .contactDetailsS {
+    margin-top: 30px;
+    display: flex;
+  }
+  /*------- ContactUS ------*/
+
+  /*----- Cart ----*/
+  td {
+    padding: 5px 10px;
+  }
+
+  .orderDImg {
+    width: 90px;
+  }
+
+  .price {
+    padding-left: 4em;
+  }
+
+  .orderDetails .itemRemoveBtn {
+    width: 70px;
+    height: 20px;
+    font-size: 10px;
+    margin-top: 4px;
+  }
+
+  .deliveryDetailsInput {
+    width: 95%;
+  }
+
+  .deliveryBox .deliveryHeader h1 {
+    font-size: 12px;
+  }
+
+  .deliveryBox img {
+    width: 30px;
+  }
+
+  .delvDetailsBtnBox .delcDetailsBtn {
+    width: 90px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .contiShopBtn {
+    width: 140px;
+    height: 23px;
+    font-size: 9px;
+  }
+  /*----- Cart ----*/
+  /*------------ Footer ---------*/
+  footer {
+    height: 100%;
+  }
+
+  footer .content .footerHeading h1 {
+    font-weight: 100;
+    font-size: 13px;
+    padding: 10px 0 2px 0;
+  }
+
+  footer .content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer .content .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+
+  footer .content .info .contactDetails p {
+    font-size: 10px;
+    padding: 8px 0;
+  }
+
+  footer .content .quickLinks a {
+    text-decoration: none;
+    color: var(--mainWhite);
+    font-size: 10px;
+  }
+
+  footer .content .quickLinks p {
+    padding-bottom: 0px;
+  }
+
+   
+  footer .content .openTimes p {
+    font-size: 10px;
+    padding-bottom: 0px;
+  }
+
+  footer .content .newsLetter #newsletterHeading {
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+
+  footer .content .newsLetter p {
+    font-size: 10px;
+  }
+
+  footer .content .newsLetter .newsLetterBtn {
+    padding: 1px 4px;
+    width: 7em;
+  }
+
+  .newsLetter {
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  footer .content .newsLetter .newsLetterInput {
+    font-size: 10px;
+    margin-top: 9px;
+    padding: 3px;
+    padding-left: 7px;
+    width: 106px;
+  }
+
+  .footerBottom p {
+    font-size: 8px;
+    padding: 0;
+  }
+  /*-------- Footer ---------*/
+
+  /*----------------- Startup Page ------------ */
+  .loginType-img {
+    width: 3.5em;
+    margin: 1.5em auto;
+  }
+
+  .login-Type {
+    width: 8em;
+    height: 10em;
+    border-radius: 20px;
+  }
+
+  .startUp-container h3 {
+    font-size: 15px;
+  }
+
+  .startUp-container h1 {
+    font-size: 1.1em;
+    margin: 20px auto;
+  }
+  /*------------------ Startup Page --------------- */
+
+  /*----------- Login Page + Registration --------- */
+  .login-Form {
+    top: 49%;
+  }
+
+  .login-Heading {
+    margin-bottom: 1.4em;
+  }
+
+  .login-Heading h2 {
+    font-size: 1em;
+  }
+
+  .login-Heading h4 {
+    font-size: 8px;
+  }
+
+  .logo-img {
+    width: 5em;
+    margin: 20px;
+  }
+
+  .login-Form .details .input-section {
+    margin-bottom: 15px;
+    opacity: 1;
+  }
+
+  .login-Form .details .input-section input[type="text"] {
+    width: 14em;
+    padding: 9px;
+    font-size: 11px;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 14em;
+    height: 2.6em;
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  .login-Form p {
+    font-size: 10px;
+  }
+  /*--------- Login Page + Registration ------ */
+
+  /*------------------ Order Page --------------- */
+  .order .container {
+    margin: 20px 10px;
+  }
+
+  .order .container .content {
+    display: flex;
+  }
+
+  .order .container .content .left {
+    width: 60%;
+  }
+
+  .order .container .content .right {
+    width: 50%;
+    padding-left: 30px;
+  }
+
+  .order .container .content .left .orderImg {
+    width: 100%;
+    height: 14em;
+    padding-bottom: 10px;
+  }
+
+  .order .container .content .left .orderSubImgBox {
+    height: 3em;
+    padding-left: 10px;
+  }
+
+  .order .container .content .left .orderSubImgBox .imgContainer {
+    width: 80%;
+    height: 100%;
+  }
+
+  .order .container .left .orderSubImgBox .imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .order .container .content .right h1 {
+    font-size: 18px;
+  }
+
+  .order .container .content .right .desc {
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+  }
+
+  .order .container .content .right .desc p {
+    padding-right: 35px;
+  }
+
+  .order .container .content .right .desc div .orderQnty {
+    width: 30px;
+  }
+
+  .order .container .content .right #price {
+    font-weight: lighter;
+    font-size: 14px;
+  }
+
+  .orderBtn {
+    width: 80%;
+    height: 2em;
+    font-size: 13px;
+    margin: 9px 0 10px 10px;
+  }
+
+  .order .container .content .right .includes ul {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .foodSuggestion .container {
+    margin: 0 40px;
+  }
+
+  .foodSuggestion .container .heading h3 {
+    margin-bottom: 30px;
+    font-weight: lighter;
+    font-size: 13px;
+  }
+
+  .foodSuggestion .container .packageOption {
+    width: 60%;
+  }
+
+  .foodSuggestion .container .packageOption .pkgOptionImg {
+    width: 100%;
+    height: 65%;
+  }
+
+  .foodSuggestion .container .packageOption .pkgOptionImg img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*------------------ Order Page --------------- */
+}
+/*------------------ RESPONSIVE: Mobile S -------------- */
+
+/*------------------ RESPONSIVE: Mobile S-- -------------- */
+@media only screen and (max-width: 375px) {
+  .container {
+    margin: 50px 10px;
+  }
+
+  .menus .container,
+  .Gallery .container,
+  .contactUs .container,
+  #aboutUs .container {
+    margin: 15px 10px;
+  }
+
+  .specialOccasion .container {
+    margin-bottom: 30px;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .heading h1 {
+    font-size: 26px;
+  }
+
+  .heading h4 {
+    font-size: 8px;
+    margin: 24px 0 2px 0;
+  }
+
+  p,
+  tr {
+    font-size: 11px;
+  }
+
+  #pageHeading h1 {
+    font-size: 28px;
+    padding-top: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .homeMainSect {
+    background-position-y: -70px;
+  }
+
+  .homeMainSect .homeDetails p {
+    font-size: 8px;
+    font-weight: 100;
+  }
+
+  .homeMainSect .homeDetails h1 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+
+  .homeMainSect .homeDetails h4 {
+    font-size: 11px;
+  }
+
+  .homeIntro .container .content .left {
+    height: 18em;
+  }
+
+  .homeIntro .container .content .left img {
+    width: 100%;
+  }
+
+  .ourServices .container .content img {
+    margin-top: 0px;
+  }
+
+  .ourServices .container .content h4 {
+    font-size: 13px;
+    margin: 5px 0 0 0;
+    padding-top: 9px;
+  }
+
+  .orderBtn-2 {
+    height: 25px;
+    width: 80px;
+    font-size: 13px;
+    margin: 13px;
+    margin-bottom: 30px;
+  }
+
+  .ourServices {
+    height: 100%;
+  }
+
+  .figures {
+    height: 100%;
+    padding: 30px;
+  }
+
+  .figures .content div p {
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 2px;
+  }
+
+  .figures .content img {
+    width: 4em;
+  }
+
+  .specialOccasion {
+    height: 100%;
+  }
+
+  .ourTeam {
+    margin-top: 0em;
+  }
+
+  .headingC h1 {
+    font-size: 15px;
+  }
+
+  .contactDetailsS div {
+    margin-right: 60px;
+  }
+
+  .inputContainer .input {
+    width: 75%;
+    height: 17px;
+    padding: 3px;
+    margin: 2px 0;
+    font-size: 12px;
+    border: 2px solid var(--mainOrange);
+  }
+
+  .inputContainer label {
+    margin-top: 15px;
+    color: var(--mainOrange);
+    font-size: 12px;
+  }
+
+  .inputContainer .textarea {
+    height: 150px;
+  }
+
+  iframe {
+    height: 17em;
+    width: 100%;
+  }
+
+  .contactDetailsS p {
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+
+  .contactDetailsS .cdHeadings p {
+    color: var(--mainOrange);
+    font-size: 12px;
+  }
+
+  .login-Form {
+    left: 50%;
+  }
+
+  .login-Form {
+    width: 90vw;
+    padding: 15px;
+  }
+
+  .login-Form {
+    width: 400px;
+    padding: 10px;
+  }
+
+  .logo-img {
+    width: 9em;
+    margin-top: 10px;
+  }
+
+  .login-Heading h2 {
+    font-size: 1.4em;
+  }
+
+  .login-Heading h4 {
+    font-size: 0.7em;
+  }
+
+  .login-Form p {
+    font-size: 12px;
+  }
+
+  .login-Form .details .input-section input[type="text"] {
+    width: 16em;
+    padding: 9px;
+    padding-left: 16px;
+    height: 1.6em;
+    border: none;
+    opacity: 1;
+    outline: none;
+    font-size: 13px;
+  }
+
+  .btn {
+    width: 16.6em;
+    height: 2.7sem;
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .Gallery {
+    height: 100%;
+  }
+
+  .menus {
+    height: 100%;
+  }
+
+  .menus .menuList div h3 {
+    color: var(--mainWhite);
+    font-size: 20px;
+  }
+
+  /*----- Cart ----*/
+  td {
+    padding: 5px 9px;
+  }
+
+  .orderDImg {
+    width: 50px;
+  }
+
+  .price {
+    padding-left: 6em;
+  }
+
+  .orderDetails .itemRemoveBtn {
+    width: 60px;
+    height: 17px;
+    font-size: 9px;
+    margin-top: 4px;
+  }
+
+  .deliveryDetailsInput {
+    width: 94%;
+  }
+
+  .deliveryBox .deliveryHeader h1 {
+    font-size: 11px;
+  }
+
+  .deliveryBox img {
+    width: 30px;
+    padding: 6px;
+  }
+
+  .delvDetailsBtnBox .delcDetailsBtn {
+    width: 80px;
+    height: 22px;
+    font-size: 9px;
+  }
+
+  .contiShopBtn {
+    width: 120px;
+    height: 21px;
+    font-size: 9px;
+  }
+  /*----- Cart ----*/
+
+  footer {
+    height: 100%;
+  }
+
+  footer .container .content p {
+    font-size: 8.8px;
+  }
+
+  footer .content .quickLinks a {
+    font-size: 8.5px;
+  }
+
+  footer .content .quickLinks {
+    padding-top: 2px;
+  }
+
+  footer .newsLetter .newsLetterInput {
+    width: 94px;
+    padding: 2px;
+    font-size: 9px;
+  }
+
+  .footerBottom p {
+    font-size: 6px;
+    padding: 0;
+  }
+
+  footer .footerHeading h1 {
+    line-height: 17px;
+  }
+
+  /*----------------- Startup Page ------------ */
+  .loginType-img {
+    width: 3em;
+    margin: 1.4em auto;
+  }
+
+  .login-Type {
+    width: 6.5em;
+    height: 8em;
+    border-radius: 20px;
+  }
+
+  .startUp-container h3 {
+    font-size: 13px;
+  }
+
+  .startUp-container h1 {
+    font-size: 1em;
+    margin: 20px auto;
+  }
+  /*------------------ Startup Page --------------- */
+
+  /*----------- Login Page + Registration --------- */
+  .login-Form {
+    top: 49%;
+  }
+
+  .login-Heading {
+    margin-bottom: 1.4em;
+  }
+
+  .login-Heading h2 {
+    font-size: 1em;
+  }
+
+  .login-Heading h4 {
+    font-size: 8px;
+  }
+
+  .logo-img {
+    width: 5em;
+    margin: 20px;
+  }
+
+  .login-Form .details .input-section {
+    margin-bottom: 15px;
+    opacity: 1;
+  }
+
+  .login-Form .details .input-section input[type="text"] {
+    width: 13em;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 11px;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 14em;
+    height: 2.5em;
+    margin: 10px;
+    font-size: 11px;
+  }
+
+  .login-Form p {
+    font-size: 10px;
+  }
+  /*--------- Login Page + Registration ------ */
+}
+/*------------------ RESPONSIVE: Mobile S-- -------------- */
+
+/*------------------ RESPONSIVE: Mobile S- -------------- */
+@media only screen and (max-width: 320px) {
+  .heading {
+    text-align: center;
+  }
+
+  .heading h1 {
+    font-size: 20px;
+  }
+
+  .heading h4 {
+    font-size: 7px;
+    margin: 24px 0 1px 0;
+  }
+
+  p,
+  tr {
+    font-size: 10px;
+  }
+
+  #pageHeading h1 {
+    font-size: 27px;
+    padding-top: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  #aboutUs .container .content .right h2 {
+    margin: 20px 0 10px 0;
+    font-size: 17px;
+    font-weight: 100;
+    padding-left: 20px;
+  }
+
+  .ourTeam .container .heading h1 {
+    padding: 10px 0 0 0;
+    font-size: 17px;
+  }
+
+  .homeMainSect {
+    height: 30vh;
+    background-position-y: -90px;
+    object-fit: cover;
+  }
+
+  .homeMainSect .homeDetails .homeMainDesc {
+    display: none;
+  }
+
+  .homeMainSect .homeDetails {
+    top: 60%;
+  }
+
+  .homeMainSect .homeDetails p {
+    font-size: 6px;
+  }
+
+  .homeMainSect .homeDetails h1 {
+    font-size: 20px;
+    margin: 9px;
+  }
+
+  .Orderbtn {
+    height: 15px;
+    width: 50px;
+    font-size: 6.4px;
+    margin-top: 1px;
+    background-color: transparent;
+    border: 1px solid var(--mainWhite);
+  }
+
+  .orderBtn-2 {
+    height: 22px;
+    width: 67px;
+    font-size: 10px;
+    margin: 13px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+  }
+
+  .homeIntro .container .content .left img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .homeIntro .container .content .left {
+    height: 13em;
+  }
+
+  .ourServices {
+    height: 100%;
+  }
+
+  .ourServices .container .content h4 {
+    font-size: 13px;
+    margin: 2px 0 0 0;
+  }
+
+  .specialOccasion .container .content .pkgOptionHeading h4 {
+    margin-bottom: 15px;
+  }
+
+  /*----- Cart ----*/
+  td {
+    padding: 5px 5px;
+  }
+
+  .orderDImg {
+    width: 50px;
+  }
+
+  .price {
+    padding-left: 7em;
+  }
+
+  .orderDetails .itemRemoveBtn {
+    width: 50px;
+    height: 15px;
+    font-size: 7px;
+    margin-top: 4px;
+  }
+
+  .deliveryDetailsInput {
+    width: 94%;
+    font-size: 9px;
+  }
+
+  .deliveryBox .deliveryHeader h1 {
+    font-size: 9px;
+  }
+
+  .deliveryBox img {
+    width: 30px;
+    padding: 6px;
+  }
+
+  .delvDetailsBtnBox .delcDetailsBtn {
+    width: 70px;
+    height: 19px;
+    font-size: 8px;
+  }
+
+  .contiShopBtn {
+    width: 100px;
+    height: 19px;
+    font-size: 7px;
+  }
+  /*----- Cart ----*/
+  .figures {
+    height: 100%;
+  }
+
+  .figures .content {
+    left: 50%;
+  }
+
+  .figures .content img {
+    width: 3em;
+    padding: 2px;
+  }
+
+  .specialOccasion {
+    height: 100%;
+  }
+
+  .specialOccasion .container .content .pkgOptionImg img {
+    margin-top: 4px;
+  }
+
+  .Gallery .container .content {
+    padding: 0;
+  }
+
+  .menus .menuList {
+    padding: 0;
+  }
+
+  .menus .menuList div h3 {
+    color: var(--mainWhite);
+    font-size: 18px;
+  }
+
+  .menus .menuList div #menuBtn {
+    left: 11%;
+    font-size: 10px;
+    height: 20px;
+    width: 60px;
+  }
+
+  #aboutUs .container .heading,
+  .contactUs .container .heading,
+  .Gallery .container .heading,
+  .menus .container .heading {
+    margin: 6em 0 1em 0;
+  }
+
+  .headingC h1 {
+    font-size: 14px;
+  }
+
+  .contactDetailsS div {
+    margin-right: 60px;
+  }
+
+  .inputContainer .input {
+    width: 75%;
+    height: 17px;
+    padding: 2px;
+    margin: 2px 0;
+    font-size: 10px;
+    border: 1px solid var(--mainOrange);
+  }
+
+  .inputContainer label {
+    margin-top: 15px;
+    color: var(--mainOrange);
+    font-size: 12px;
+  }
+
+  .inputContainer .textarea {
+    height: 130px;
+  }
+
+  iframe {
+    height: 17em;
+    width: 100%;
+  }
+
+  .contactDetailsS p {
+    font-size: 10px;
+    padding-bottom: 15px;
+  }
+
+  .contactDetailsS .cdHeadings p {
+    color: var(--mainOrange);
+    font-size: 10px;
+  }
+
+  .login-Form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 90vh;
+    text-align: center;
+    align-content: center;
+  }
+
+  .menus {
+    height: 100%;
+  }
+
+  footer {
+    height: 100%;
+  }
+
+  footer .content .footerHeading h1 {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  footer .content .info .contactDetails p {
+    font-size: 8px;
+    padding: 8px 0;
+  }
+
+  footer .content .info p {
+    font-size: 8px;
+  }
+
+  footer .container .content .quickLinks {
+    padding-top: 2px;
+  }
+
+  footer .content .info .quickLinks a {
+    font-size: 7px;
+  }
+
+  .newsLetter {
+    padding-left: 0;
+  }
+
+  footer .container .newsLetter #newsletterHeading {
+    font-size: 8px;
+    padding-bottom: 5px;
+  }
+
+  footer .content .newsLetter p {
+    padding: 0;
+  }
+
+  footer .content .newsLetter .newsLetterInput {
+    width: 80px;
+    font-size: 8px;
+    margin-top: 2px;
+    padding: 2px;
+    padding-left: 5px;
+  }
+
+  .footerBottom p {
+    font-size: 6px;
+  }
+
+  /*----------------- Startup Page ------------ */
+  .loginType-img {
+    width: 2em;
+    margin: 1.2em auto;
+  }
+
+  .login-Type {
+    width: 5em;
+    height: 7em;
+    border-radius: 20px;
+  }
+
+  .startUp-container h3 {
+    font-size: 12px;
+  }
+
+  .startUp-container h1 {
+    font-size: 0.8em;
+    margin: 20px auto;
+  }
+  /*------------------ Startup Page --------------- */
+
+  /*----------- Login Page + Registration --------- */
+  .login-Form {
+    top: 49%;
+  }
+
+  .login-Heading {
+    margin-bottom: 1.4em;
+  }
+
+  .login-Heading h2 {
+    font-size: 0.8em;
+  }
+
+  .login-Heading h4 {
+    font-size: 6px;
+  }
+
+  .logo-img {
+    width: 4.5em;
+    margin: 20px;
+  }
+
+  .login-Form .details .input-section {
+    margin-bottom: 15px;
+    opacity: 1;
+  }
+
+  .login-Form .details .input-section input[type="text"] {
+    width: 13em;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 10px;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 14em;
+    height: 2.5em;
+    margin: 10px;
+    font-size: 10px;
+  }
+
+  .login-Form p {
+    font-size: 10px;
+  }
+  /*--------- Login Page + Registration ------ */
+}
+/*------------------ RESPONSIVE: Mobile S- -------------- */

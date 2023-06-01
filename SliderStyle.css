@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --mainOrange: orange;
+  --mainLightOrng: rgb(243, 195, 106);
+  --mainBlack: black;
+  --mainWhite: #fff;
+}
+
+.slide-container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px 0 40px 0;
+}
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 19px 0;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 25px 25px;
+}
+
+.card-image {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  background: #fff;
+  padding: 3px;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--mainOrange);
+}
+
+.swiper-navBtn {
+  color: var(--mainLightOrng);
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: var(--mainOrange);
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 33px;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-pagination-bullet {
+  background-color: var(--mainLightOrng);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--mainOrange);
+}
+
+@media screen and (max-width: 2560px) {
+  .card-image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .card-image {
+    position: relative;
+    height: 100%;
+    width: 70%;
+    background: #fff;
+    padding: 3px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slide-container {
+    width: 80%;
+    padding: 10px 0 40px 0;
+  }
+
+  .card-image {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background: #fff;
+    padding: 3px;
+  }
+
+  .name {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide-container {
+    width: 70%;
+    padding: 10px 0 40px 0;
+  }
+
+  .slide-content {
+    margin: 0;
+  }
+
+  .card-image {
+    position: relative;
+    height: 100%;
+    width: 40%;
+    padding: 3px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .slide-content {
+    margin: 0 40px;
+  }
+
+  .slide-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+
+  .card-image {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 5px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .slide-content {
+    margin: 0 20px;
+  }
+
+  .slide-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 0 0 10px 0x;
+  }
+
+  .card-image {
+    position: relative;
+    height: 100%;
+    width: 35%;
+    border-radius: 50%;
+    background: #fff;
+    padding: 5px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    display: none;
+  }
+}

@@ -1,0 +1,191 @@
+:root {
+  --orange: orange;
+  --greyIsh: rgb(243, 243, 243);
+  --black: black;
+  --white: white;
+}
+* {
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+section .container {
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  transform: translate(-45%, 0%);
+  width: 70%;
+  height: 39.4em;
+  background-color: var(--greyIsh);
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+form {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 30em;
+}
+
+p,
+td {
+  font-size: 15px;
+}
+
+.container .heading {
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#heading2 {
+  margin-bottom: 6em;
+}
+
+.details {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.details .orderDetailsH {
+  padding-right: 20px;
+}
+
+.orderNum {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.orderDImg {
+  width: 90px;
+}
+
+#row1 {
+  border-bottom: 1px solid var(--black);
+}
+
+#row2 {
+  border-bottom: 1px solid var(--black);
+}
+
+#row3 {
+  border-bottom: 1px solid var(--black);
+}
+
+.orderDetailsBtn {
+  background-color: var(--orange);
+  border: none;
+  height: 30px;
+  font-size: 16px;
+}
+
+.myOrdersBtn {
+  background-color: var(--orange);
+  border: none;
+  height: 25px;
+  font-size: 14px;
+}
+
+.sideBar {
+  width: 20%;
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  height: 100%;
+}
+
+.sideBar .containerSB {
+  position: relative;
+  top: 5em;
+  height: 100vh;
+  background-color: rgb(245, 245, 245);
+}
+
+.sideBar .imgBox img {
+  width: 47%;
+}
+
+.sideBar .imgBox p {
+  color: var(--orange);
+  margin: 20px;
+}
+
+.sideBar .containerSB .options {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBar .containerSB .options input {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border: none;
+  box-shadow: 0 1px 3px var(--greyIsh);
+  font-size: 15px;
+}
+
+.myAccount .container {
+  text-align: center;
+}
+
+.myAccount .heading {
+  margin-bottom: 1em;
+}
+
+.myAccount .container .imgBoxAC img {
+  width: 8em;
+}
+
+.myAccount .container form {
+  text-align: center;
+}
+
+.myAccount form .inputContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-evenly;
+  width: 17em;
+  position: relative;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -0%);
+}
+
+.myAccount form .inputContainer input {
+  font-size: 14px;
+  border: none;
+  background-color: var(--white);
+  padding: 4px;
+  height: 19px;
+  outline: none;
+}
+
+.myAccount form .inputContainer textarea {
+  outline: none;
+  font-size: 14px;
+  border: none;
+  background-color: var(--white);
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+.myAccount form .inputContainer label {
+  margin-top: 20px;
+}
+.updateProfileBtn {
+  background-color: var(--orange);
+  border: none;
+  height: 25px;
+  font-size: 15px;
+  width: 150px;
+}
